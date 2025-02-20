@@ -15,7 +15,6 @@ export class PaymentComponent implements OnInit {
 
   ngOnInit(): void {
     const productsStorage = localStorage.getItem('products');
-    console.log(productsStorage);
 
     if (productsStorage) {
       this.products = JSON.parse(productsStorage) as ICommonProduct[];
